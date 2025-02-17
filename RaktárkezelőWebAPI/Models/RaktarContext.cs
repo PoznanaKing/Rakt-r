@@ -19,7 +19,6 @@ public partial class RaktarContext : DbContext
 
     public virtual DbSet<Termek> Termeks { get; set; }
 
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseMySQL("server=localhost;database=raktar;user=root;password=;sslmode=none;");
@@ -46,6 +45,8 @@ public partial class RaktarContext : DbContext
 
             entity.ToTable("termek");
 
+            entity.HasIndex(e => e.BeszallitoId, "beszallitoId");
+
             entity.Property(e => e.TermekId)
                 .HasColumnType("int(11)")
                 .HasColumnName("termekId");
@@ -58,6 +59,10 @@ public partial class RaktarContext : DbContext
             entity.Property(e => e.Nev)
                 .HasColumnType("text")
                 .HasColumnName("nev");
+
+            entity.HasOne(d => d.Beszallito).WithMany(p => p.Termeks)
+                .HasForeignKey(d => d.BeszallitoId)
+                .HasConstraintName("termek_ibfk_1");
         });
 
         OnModelCreatingPartial(modelBuilder);

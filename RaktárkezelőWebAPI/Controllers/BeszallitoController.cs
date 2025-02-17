@@ -34,7 +34,7 @@ namespace RaktárkezelőWebAPI.Controllers
         [HttpGet("GetBeszallitok")]
         public async Task<ActionResult> GetBeszallitok()
         {
-            var beszallitok = await _context.Beszallitos.ToListAsync();
+            var beszallitok = await _context.Beszallitos.Include(x=>x.Termeks).ToListAsync();
             if (beszallitok != null)
             {
                 return Ok(new { result = beszallitok });

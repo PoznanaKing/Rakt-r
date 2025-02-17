@@ -1,5 +1,6 @@
 
 using RaktárkezelőWebAPI.Models;
+using System.Text.Json.Serialization;
 
 namespace RaktárkezelőWebAPI
 {
@@ -16,6 +17,7 @@ namespace RaktárkezelőWebAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<RaktarContext>();
+            builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

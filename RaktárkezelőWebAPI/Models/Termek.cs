@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace RaktárkezelőWebAPI.Models;
 
@@ -12,4 +13,6 @@ public partial class Termek
     public int Ar { get; set; }
 
     public int BeszallitoId { get; set; }
+    [JsonIgnore]
+    public virtual Beszallito Beszallito { get; set; } = null!;
 }

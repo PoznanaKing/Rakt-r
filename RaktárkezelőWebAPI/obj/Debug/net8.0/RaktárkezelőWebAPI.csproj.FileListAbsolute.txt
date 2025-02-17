@@ -132,3 +132,4 @@ C:\GitWorkRepos\EmailApi\RaktárkezelőWebAPI\RaktárkezelőWebAPI\obj\Debug\net
 C:\GitWorkRepos\EmailApi\RaktárkezelőWebAPI\RaktárkezelőWebAPI\obj\Debug\net8.0\RaktárkezelőWebAPI.pdb
 C:\GitWorkRepos\EmailApi\RaktárkezelőWebAPI\RaktárkezelőWebAPI\obj\Debug\net8.0\RaktárkezelőWebAPI.genruntimeconfig.cache
 C:\GitWorkRepos\EmailApi\RaktárkezelőWebAPI\RaktárkezelőWebAPI\obj\Debug\net8.0\ref\RaktárkezelőWebAPI.dll
+C:\GitWorkRepos\EmailApi\RaktárkezelőWebAPI\RaktárkezelőWebAPI\obj\Debug\net8.0\RaktárkezelőWebAPI.sourcelink.json

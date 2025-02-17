@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RaktárkezelőWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad7d031a8e7e9ee5bfd69596a5f0a44e5c06c88e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RaktárkezelőWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RaktárkezelőWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
