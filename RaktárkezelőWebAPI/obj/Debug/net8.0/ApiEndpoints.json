@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "Rakt\u00E1rkezel\u0151WebAPI.Controllers.BeszallitoController",
+    "Method": "DeleteBeszallito",
+    "RelativePath": "Beszallito/DeleteBeszallito",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deleteBeszallitoDTO",
+        "Type": "Rakt\u00E1rkezel\u0151WebAPI.Models.DeleteBeszallitoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rakt\u00E1rkezel\u0151WebAPI.Controllers.BeszallitoController",
+    "Method": "EditBeszallito",
+    "RelativePath": "Beszallito/EditBeszallito",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "editBeszallitoDTO",
+        "Type": "Rakt\u00E1rkezel\u0151WebAPI.Models.EditBeszallitoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rakt\u00E1rkezel\u0151WebAPI.Controllers.BeszallitoController",
+    "Method": "GetBeszallitok",
+    "RelativePath": "Beszallito/GetBeszallitok",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rakt\u00E1rkezel\u0151WebAPI.Controllers.BeszallitoController",
+    "Method": "UploadBeszallito",
+    "RelativePath": "Beszallito/UploadBeszallito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uploadBeszallitoDTO",
+        "Type": "Rakt\u00E1rkezel\u0151WebAPI.Models.UploadBeszallitoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
